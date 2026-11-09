@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | CodeStart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+<header class="bg-black text-white">
+  <div class="fixed top-0 left-0 right-0 z-50 bg-black border-b border-gray-800 max-w-full mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="text-2xl font-bold text-neon">CodeStart</a>
+
+    <nav class="hidden md:flex" aria-label="Main">
+      <ul class="flex flex-row items-center gap-6">
+        <li>
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li>
+          <a href="courses.html" class="nav-link ">Courses</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link">About us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" id="burger" class="peer sr-only">
+    <label for="burger" class="text-3xl cursor-pointer md:hidden" aria-label="Open menu">&#9776;</label>
+
+    <nav class="hidden peer-checked:block md:hidden absolute top-full left-0 right-0 bg-black border-b border-gray-800 px-4 py-4" aria-label="Mobile">
+      <ul >
+        <li>
+          <a href="index.html" class="nav-link block py-2">Home</a>
+        </li>
+        <li>
+          <a href="courses.html" class="nav-link block py-2 active">Courses</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link block py-2">About us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="h-10"></div>
+</header>
+
+<main class="flex-grow">
+<section class="bg-neon text-black text-center px-4 py-24">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">Start your IT career today</h1>
+  <p class="text-lg mb-8 max-w-2xl mx-auto">Online IT courses for beginners. Learn step by step with mentors and real projects.</p>
+  <a href="courses.html" class="btn">Browse courses</a>
+</section>
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold mb-8">Popular courses</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="card p-6"><div class="thumb h-32 mb-4">🌐</div><h3 class="text-xl font-semibold mb-2">Web Development</h3><p class="mb-4 text-gray-600">Learn HTML, CSS and JavaScript and build real websites.</p><a href="courses.html#web" class="underline font-semibold">Learn more</a></article>
+    <article class="card p-6"><div class="thumb h-32 mb-4">🐍</div><h3 class="text-xl font-semibold mb-2">Python Basics</h3><p class="mb-4 text-gray-600">Start programming with the friendliest language.</p><a href="courses.html#python" class="underline font-semibold">Learn more</a></article>
+    <article class="card p-6"><div class="thumb h-32 mb-4">🎨</div><h3 class="text-xl font-semibold mb-2">UI/UX Design</h3><p class="mb-4 text-gray-600">Design clear, good-looking interfaces in Figma.</p><a href="courses.html#design" class="underline font-semibold">Learn more</a></article>
+  </div>
+</section>
+<section class="bg-black py-12 px-4">
+  <h2 class="sr-only">Our numbers</h2>
+  <div class="max-w-4xl mx-auto flex flex-wrap justify-around">
+    <div class="w-1/2 md:w-auto text-center mb-6 md:mb-0"><p class="text-4xl font-bold text-neon">5,000+</p><p class="text-gray-300">Students</p></div>
+    <div class="w-1/2 md:w-auto text-center mb-6 md:mb-0"><p class="text-4xl font-bold text-neon">30</p><p class="text-gray-300">Courses</p></div>
+    <div class="w-1/2 md:w-auto text-center mb-6 md:mb-0"><p class="text-4xl font-bold text-neon">40</p><p class="text-gray-300">Mentors</p></div>
+    <div class="w-1/2 md:w-auto text-center mb-6 md:mb-0"><p class="text-4xl font-bold text-neon">92%</p><p class="text-gray-300">Find a job</p></div>
+  </div>
+</section>
+</main>
+<footer class="bg-black text-gray-300">
+  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div><h3 class="text-neon font-semibold mb-3">Contacts</h3><p>mustafa.amina@list.ru</p><p>+7 705 170 18 86</p><p>Oraza Zhandosova 55, Almaty</p></div>
+    <div><h3 class="text-neon font-semibold mb-3">Pages</h3><ul class="space-y-1"><li><a href="index.html" class="hover:text-white">Home</a></li><li><a href="courses.html" class="hover:text-white">Courses</a></li><li><a href="about.html" class="hover:text-white">About us</a></li></ul></div>
+    <div><h3 class="text-neon font-semibold mb-3">Social</h3><ul class="space-y-1"><li><a href="#" class="hover:text-white">Instagram</a></li><li><a href="#" class="hover:text-white">YouTube</a></li><li><a href="#" class="hover:text-white">Telegram</a></li></ul></div>
+  </div>
+  <p class="text-center text-sm border-t border-gray-700 py-4">&copy; 2026 CodeStart. All rights reserved.</p>
+</footer>
+</body>
+</html>
